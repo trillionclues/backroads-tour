@@ -62,10 +62,10 @@ const Prev = styled.div`
     z-index: 10;
 
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       text-transform: uppercase;
       margin-bottom: 1rem;
-      font-weight: 900;
+      font-weight: 700;
     }
 
     p {
