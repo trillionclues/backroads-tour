@@ -8,7 +8,7 @@ import { FaSocks } from 'react-icons/fa'
 
 const Services = () => {
   return (
-    <Section>
+    <Section id='services'>
       <div className='services ' id='section'>
         <h1>
           our <span>services</span>
@@ -97,6 +97,37 @@ const Section = styled.div`
           color: #000;
           background-color: hsl(185, 57%, 40%);
           padding: 0.8rem 0.7rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .services {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .display-services {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+
+        .service {
+          flex-direction: column;
+
+          .content {
+            text-align: center;
+
+            p:first-of-type {
+              font-size: 1.2rem;
+              margin-bottom: 0.5rem;
+            }
+
+            p:last-of-type {
+              font-weight: lighter;
+            }
+          }
         }
       }
     }

@@ -6,7 +6,7 @@ import Image1 from '../assets/images/about.jpeg'
 const About = () => {
   return (
     <>
-      <Section>
+      <Section id='about'>
         <div className='about ' id='section'>
           <h1>
             About <span>US</span>
@@ -120,6 +120,49 @@ const Section = styled.div`
         &:hover {
           background-color: hsl(185, 57%, 40%);
           font-weight: lighter;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about {
+      padding: 0;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .about-preview {
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          height: 35vh;
+        }
+
+        .about-content {
+          width: 100%;
+          padding: 0;
+
+          h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+
+          button {
+            /* padding: 0.3rem 0.8rem;
+            font-size: 0.9rem; */
+          }
         }
       }
     }

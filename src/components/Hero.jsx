@@ -28,6 +28,7 @@ export default Hero
 const Prev = styled.div`
   position: relative;
   overflow: hidden;
+  height: 100vh;
 
   &::after {
     content: '';
@@ -92,6 +93,24 @@ const Prev = styled.div`
       background-color: transparent;
       border: 1px solid #fff;
       color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      h1 {
+        font-size: 3.2rem;
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 0.8rem 1.2rem;
     }
   }
 `

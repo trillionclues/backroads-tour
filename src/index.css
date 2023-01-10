@@ -16,3 +16,9 @@ html {
 
   /* margin: 0.5rem 5rem; */
 }
+
+@media screen and (max-width: 768px) {
+  #section {
+    padding: 1rem 1.2rem;
+  }
+}
