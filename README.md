@@ -23,7 +23,7 @@ Some of the major technologies and libraries used include:
 
 ## Demo
 
-View a live version of the Backroads landing page
+View a live version of the [Backroads landing page](https://backroads-tour-lp.netlify.app/)
 
 ## Got feedback?
 
